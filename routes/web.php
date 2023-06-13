@@ -34,4 +34,5 @@ Auth::routes();
 
 Route::middleware(['auth'])->prefix("dashboard")->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/user-list', [HomeController::class, 'users'])->name('users')->can('admin-only');
 });
