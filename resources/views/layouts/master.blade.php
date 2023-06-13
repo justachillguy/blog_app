@@ -22,13 +22,21 @@
 
 
         <main class="py-4">
-            @yield('content')
+            <div class=" container">
+                <div class="row">
+                    <div class=" col-lg-8">
+                        @yield('content')
+                    </div>
+                    <div class=" col-lg-4">
+                        @include('layouts.right-sidebar')
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class=" bg-dark py-5 text-center text-white mt-auto">
             <p class="mb-0">Page Footer</p>
         </footer>
-
     </div>
 
 </body>
