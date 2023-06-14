@@ -17,8 +17,6 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <div id="app" class=" min-vh-100 d-flex flex-column">
-        @include("layouts.nav")
 
 
         <main class="py-4">
